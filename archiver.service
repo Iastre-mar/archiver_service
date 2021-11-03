@@ -1,0 +1,9 @@
+[Unit]
+Description=Archiver service
+After=multi-user.target
+[Service]
+Type=simple
+Restart=always
+ExecStart=/usr/bin/bash -c "python3 {path}"
+[Install]
+WantedBy=multi-user.target
